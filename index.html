@@ -1,12 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" 
+          content="IE=edge" />
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0" />
 <title>R Connor Shallow</title>
-</head>
 <body>
 
 
 <h1>R Connor Shallow</h1>
-<h2>About Me</h2>
-
+<h2>About this Website</h2>
 <p1>The purpose of this website is to highlight some projects and other (semi) interesting stuff I've had the chance to do recently.</p1>
+
+<h2>Projects</h2>
+<p1>Technology</p2>
+<p1>
+
+
+    <h3 id="DarkModetext">Dark Mode is OFF</h3>
+    <button onclick="darkMode()">Darkmode</button>
+    <button onclick="lightMode()">LightMode</button>
+    <script>
+        function darkMode() {
+            let element = document.body;
+            let content = document.getElementById("DarkModetext");
+            element.className = "dark-mode";
+            content.innerText = "Dark Mode is ON";
+        }
+        function lightMode() {
+            let element = document.body;
+            let content = document.getElementById("DarkModetext");
+            element.className = "light-mode";
+            content.innerText = "Dark Mode is OFF";
+        }
+    </script>
+</body>
+</html>
+ 
